@@ -1,0 +1,130 @@
+/**
+    For the purposes of display
+*/
+
+body {
+    margin: 0;
+}
+
+main > div {
+    margin: 60px 0;
+}
+
+@media screen and (max-width: 480px) {
+    main > div {
+        margin: 140px 0;
+    }
+}
+
+
+/**
+    Actual component CSS
+*/
+
+.rcl-testimonial.rcl-no-image {
+    background-color: #eeeeee;
+    text-align: center;
+    justify-content: center;
+}
+
+.rcl-testimonial {
+    background-color: #2545B8;
+    display: flex;
+    height: 300px;
+    width: fit-content;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 30px;
+}
+
+.rcl-testimonial-image {
+    height: 115%;
+    width: 250px;
+    object-fit: cover;
+    margin-top: -2%;
+    border-radius: 12px;
+}
+
+.rcl-no-image .rcl-testimonial-content {
+    color: #000000;
+    font-size: 1.4rem;
+}
+
+
+.rcl-no-image .rcl-author-container {
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.rcl-no-image .rcl-author-container > div {
+    margin: 0 5px;
+}
+
+.rcl-no-image .rcl-author-container .rcl-slash {
+    color: #2545B8;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.rcl-testimonial-content {
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+}
+
+.rcl-testimonial-content > div {
+    margin: 24px 0;
+}
+
+.rcl-testimonial-content .rcl-testimonial-quote {
+    color: #aaaacc;
+    font-size: 2rem;
+}
+
+.rcl-testimonial-words, .rcl-testimonial-author {
+    font-weight: bold;
+}
+
+.rcl-testimonial-content > div.rcl-testimonial-position, .rcl-testimonial-content > div.rcl-testimonial-author {
+    margin: 3px 0;
+}
+
+
+@media screen and (max-width: 480px) {
+    .rcl-testimonial {
+        display: block;
+        text-align: center;
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+
+    .rcl-testimonial-image {
+        max-height: 200px;
+        width: 95%;
+        margin-top: -30%;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    .rcl-testimonial-content {
+        text-align: left;
+    }
+
+    .rcl-testimonial-content > div.rcl-testimonial-position, .rcl-testimonial-content > div.rcl-testimonial-author {
+        font-size: 0.8rem;
+    }
+
+    .rcl-testimonial.rcl-no-image {
+        padding: 15px;
+    }
+
+    .rcl-no-image .rcl-author-container {
+        display: block;
+    }
+
+    .rcl-no-image .rcl-author-container .rcl-slash{
+        display: none;
+    }
+}
