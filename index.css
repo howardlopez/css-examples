@@ -16,6 +16,11 @@ th {
     border-bottom: 3px solid #ddd;
 }
 
+.subtable-header {
+    font-weight: bolder;
+    font-size: larger;
+}
+
 /* Row styling */
 td {
     padding: 12px;

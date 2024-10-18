@@ -1,0 +1,92 @@
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    font-weight: bold;
+    background-color:#FFF7ED;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+header .title {
+    margin-right: auto;
+    font-weight: bolder;
+}
+
+header nav {
+    font-weight: normal;
+}
+
+header nav a {
+    margin: 0 10px;
+    color: #4D4D4D;
+    text-decoration: none;
+}
+
+header nav a.current {
+    text-decoration: underline;
+}
+
+footer {
+    color: #AAAAAA;
+    background-color: #252525;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .copyright {
+    font-size: 1.6rem;
+    vertical-align: middle;
+}
+
+.page-home {
+    font-family: 'Inter', sans-serif;
+    background-image: url("images/vanlife-home.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #000;
+    color: #fff;
+    padding: 30px 15px;
+}
+
+.page-home button:hover {
+    cursor: pointer;
+}
+
+.page-home > * {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.page-home .title {
+    font-weight: 900;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+.page-home .description {
+    max-width: 900px;
+    margin-bottom: 40px;
+} 
+
+.page-home .action-link {
+    display: block;
+    text-align: center;
+}
+
+.page-home .action-button {
+    background-color: #FF8C38;
+    width: 95%;
+    max-width: 900px;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    color: #FFF;
+    font-weight: 700;
+}
