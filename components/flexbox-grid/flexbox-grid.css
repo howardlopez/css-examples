@@ -1,0 +1,69 @@
+.page-vans {
+    background-color: #FFF7ED;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.page-vans .van-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.page-vans .van-grid-item {
+    width: 300px;
+    max-width: 45%;
+}
+
+.page-vans .van-grid-item-data {
+    display: flex;
+}
+
+.page-vans .van-grid-item-left {
+    margin-right: auto;
+}
+
+.page-vans .van-grid-item-title {
+    font-weight: 700;
+}
+
+.page-vans .van-grid-item-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.page-vans .van-grid-item-price {
+    margin-left: auto;
+    text-align: right;
+}
+
+.page-vans .van-grid-item-price-main {
+    font-weight: 700;
+}
+
+.page-vans .van-grid-item-price-time {
+    font-size: 0.7rem;
+}
+
+.page-vans .van-grid-item-type {
+    padding: 5px 0;
+    width: 85px;
+    margin-right: auto;
+    color: #FFEAD0;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+}
+
+.page-vans .van-grid-item-type.type-simple {
+    background-color: #E17654;
+}
+
+.page-vans .van-grid-item-type.type-rugged {
+    background-color: #115E59;
+}
+
+.page-vans .van-grid-item-type.type-luxury {
+    background-color: #161616;
+}
