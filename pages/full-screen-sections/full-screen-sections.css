@@ -1,0 +1,63 @@
+/* Layout */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #2b283a;
+    margin: unset;
+}
+
+header {
+    background-color: #5f29a3;
+    padding: 45px 0;
+}
+
+section {
+    padding: 45px 0;
+}
+
+.container {
+    width: 620px;
+    margin: 0 auto;
+}
+
+.crypto {
+    background-color: #5f29a3;
+    color: whitesmoke;
+}
+
+.main-image {
+    width: 100%;
+}
+
+
+/* Typography */
+
+h1 {
+    color: whitesmoke;
+    font-size: 36px;
+    margin: unset;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #d0aaff;
+    font-size: 20px;
+    margin: unset;
+}
+
+/* Links */
+
+p a {
+    color: #ef5839;
+    text-decoration: underline dotted;
+}
+
+p a:hover, p a:active {
+    color: #d4b44c;
+}
+
