@@ -7,13 +7,18 @@ body {
     margin: unset;
 }
 
-header {
-    background-color: #5f29a3;
+header, footer, section {
     padding: 45px 0;
 }
 
-section {
-    padding: 45px 0;
+header, .section-two {
+    background-color: #5f29a3;
+}
+
+footer {
+    font-size: 16px;
+    color: #5f29a3;
+    text-align: center;
 }
 
 .container {
@@ -21,9 +26,18 @@ section {
     margin: 0 auto;
 }
 
-.crypto {
-    background-color: #5f29a3;
+.section-two {
     color: whitesmoke;
+}
+
+.section-two-image {
+    width: 300px;
+    border-radius: 6px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
 }
 
 .main-image {
@@ -52,12 +66,12 @@ h3 {
 
 /* Links */
 
-p a {
+a {
     color: #ef5839;
     text-decoration: underline dotted;
 }
 
-p a:hover, p a:active {
+a:hover, a:active {
     color: #d4b44c;
 }
 
