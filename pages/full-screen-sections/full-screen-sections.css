@@ -64,14 +64,47 @@ h3 {
     margin: unset;
 }
 
+p {
+    line-height: 23px;
+}
+
 /* Links */
 
-a, a:visited, a:link {
+p a, p a:visited, p a:link {
     color: #ef5839;
     text-decoration: underline dotted;
 }
 
-a:hover, a:active {
+p a:hover, p a:active {
     color: #d4b44c;
 }
 
+.btn {
+    display: inline-block;
+    padding: 10px 19px;
+    border-radius: 4.6px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn:active, .btn:hover {
+    background-color: #f3e885;
+    color: #2b283a;
+}
+
+.btn-info, .btn-about  {
+    color: #5f29a3;
+}
+
+.btn-info {
+    background-color: #f0e0ff;
+}
+
+.btn-about {
+    background-color: whitesmoke;
+}
+
+.btn-buy {
+    background-color: #5f29a3;
+    color: whitesmoke;
+}
