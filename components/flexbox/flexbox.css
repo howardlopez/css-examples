@@ -3,7 +3,7 @@
 .container {
     display: flex;
     border: 8px solid #016a26;
-    height: 260px;
+    height: 320px;
 }
 
 .bottom-left {
@@ -21,17 +21,35 @@
     align-items: center;
 }
 
-.top-middle-space-between {
+.column-center-left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.column-right-space-between {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.column-top-center {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.top-center-space-between {
     justify-content: space-between;
     align-items: start;
 } 
 
-.top-middle-space-around {
+.top-center-space-around {
     justify-content: space-around;
     align-items: start;
 } 
 
-.top-middle-space-evenly {
+.top-center-space-evenly {
     justify-content: space-evenly;
     align-items: start;
 } 
