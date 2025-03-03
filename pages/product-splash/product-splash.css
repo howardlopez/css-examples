@@ -37,6 +37,12 @@ p {
     line-height: 1.35;
 }
 
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
+
 /* =================
     Intro
    ================= */
@@ -77,7 +83,62 @@ p {
 /* =================
     Form
    ================= */
-   
+
+/* =================
+    Form
+   ================= */
+
+/* 
+  Challenge: Style the submit button
+    - The button should have the same font-family, width
+      and border-radius of the input elements
+    - Use the .btn selector to set the custom button styles;
+      use the slide as a guide
+    - Button colors:
+      - Background: #8a71ec
+      - Background on hover: #b7a7f6
+*/
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input, .btn {
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+input {
+    margin-bottom: 0.75em;
+    padding: 0.5em;
+    border: solid 2px #d1d5db;
+}
+
+input:focus {
+    border-color: #8a71ec;
+    background-color: #e6e8ec;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.75em;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    margin-top: 1em;
+    background-color: #8a71ec;
+    color: #FFF;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #b7a7f6;
+}
 
 /* =================
     Media queries 
