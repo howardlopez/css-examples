@@ -6,6 +6,18 @@
     height: 320px;
 }
 
+.tube {
+    order: 0;
+}
+
+.dish {
+    order: 1;
+}
+
+.goggles {
+    order: 2;
+}
+
 .bottom-left {
     justify-content: start;
     align-items: end;
