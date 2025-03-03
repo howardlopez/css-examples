@@ -179,6 +179,20 @@ footer {
         padding: 2.875em 0;
     }
 
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 10px;
+    }
+
     .btn {
         display: inline-block;
         margin-right: 0.25em;
