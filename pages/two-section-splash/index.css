@@ -1,9 +1,14 @@
+*, *::before, *::after {
+    box-sizing: border-box;    
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #404040;
     margin: 0;
     padding: 0;
 }
+
 
 /* =================
     Typography 
@@ -37,6 +42,14 @@ p {
     line-height: 1.35;
 }
 
+.top-text {
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    order: -1;
+}
+
 .fine-print {
     font-size: 0.75rem;
     letter-spacing: 1px;
@@ -47,6 +60,16 @@ p {
     Intro
    ================= */
 
+/* 
+  Challenge: 
+    Adjust the visual order of .top-text and re-distribute
+    the space inside .intro: 
+      - Display .top-text above the h1 and align it to 
+        the top edge of the .intro section
+      - Evenly distribute the content inside .intro
+      - The top border of .top-text should match the width of the text
+*/
+
 .intro { 
     color: #fff;
     background-color: #9480e4;
@@ -54,17 +77,26 @@ p {
     flex-direction: column;
     min-height: 250px;
     align-items: center;
-    justify-content: center;
     text-align: center;
     background-image: url("images/intro-bg.png");
     background-position: center center;
     background-size: cover;
+    padding: 0 0.3em;
+}
+
+.beta-text {
+    margin-bottom: 1em;
 }
 
 
 /* ====================
     Main content
    ==================== */
+
+.main-content p,
+form {
+    max-width: 450px;
+}
 
 .main-content {
     display: flex;
@@ -78,26 +110,10 @@ p {
     border-radius: 50%;
 }
 
-
-
 /* =================
     Form
    ================= */
 
-/* =================
-    Form
-   ================= */
-
-/* 
-  Challenge: Style the submit button
-    - The button should have the same font-family, width
-      and border-radius of the input elements
-    - Use the .btn selector to set the custom button styles;
-      use the slide as a guide
-    - Button colors:
-      - Background: #8a71ec
-      - Background on hover: #b7a7f6
-*/
 form {
     display: flex;
     flex-direction: column;
@@ -149,15 +165,23 @@ input:focus {
         display: flex;
     }
 
-    .intro {
-        min-height: 100vh;
-    }
-
     .intro, .main-content {
         flex-basis: 50%;
         align-items: center;
-        justify-content: center;
         padding-top: 0;
+    }
+
+    .intro {
+        min-height: 100vh;
+        justify-content: space-between;
+    }
+
+    .top-text {
+        margin: 0;
+    }
+
+    .main-content{
+        justify-content: center;
     }
 
     h1 {
