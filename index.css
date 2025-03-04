@@ -2,7 +2,6 @@
     Table
    ================= */
 table {
-    width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     font-size: 18px;
@@ -25,6 +24,10 @@ th {
 td {
     padding: 12px;
     border-bottom: 1px solid #ddd;
+}
+
+.versions {
+    min-width: 100px;
 }
 
 tr:nth-child(even) {
