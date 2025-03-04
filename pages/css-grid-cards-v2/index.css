@@ -11,28 +11,29 @@ body {
 /* =================
     Layout
    ================= */
-   
-.technology {
-    grid-area: tech;
+
+body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+        ".... .... ...."
+        ".... head ...."
+        ".... main ...."
+        ".... foot ...."
+        ".... .... ....";
+    gap: 1em;
 }
 
-.environment {
-    grid-area: envr;
-}
-    
-.nasa {
-    grid-area: nasa;
+.site-header {
+    grid-area: head;
 }
 
-.physics { 
-    grid-area: phys;
+footer {
+    grid-area: foot;
 }
-
-.health {
-    grid-area: hlth;
-} 
 
 main {
+    grid-area: main;
     display: grid;
     gap: 1em;
     grid-template-columns: 1fr;
@@ -57,12 +58,33 @@ main {
 
 @media (min-width: 870px) {
     main {
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: repeat(9, 1fr) repeat(3, minmax(70px, 1fr));
         grid-template-areas: 
             "tech tech tech tech tech tech envr envr envr nasa nasa nasa"
             "phys phys phys hlth hlth hlth hlth hlth hlth nasa nasa nasa";
     }
 }
+
+.technology {
+    grid-area: tech;
+}
+
+.environment {
+    grid-area: envr;
+}
+    
+.nasa {
+    grid-area: nasa;
+}
+
+.physics { 
+    grid-area: phys;
+}
+
+.health {
+    grid-area: hlth;
+} 
+
 
 /* =================
     Article Card 
